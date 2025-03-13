@@ -166,6 +166,7 @@ def main():
         print("  [4]  File Hasher           [9]  Random Password Generator")
         print("  [5]  Clock                 [10]  Figlet Banner")
         print("                             [11]  Exit")
+        print("                             [12] msfconsole")
         print("════════════════════════════════════════")
         
         choice = input("┌──(multitool)─[~]\n└─$ ").strip()
@@ -208,6 +209,10 @@ def main():
         elif choice == "11":
             print("Exiting program.")
             break
+        elif choice == "12":
+            launch_msfconsole()
+            input("\nPress Enter to continue...")
+
         else:
             print("Invalid option, please try again.")
             time.sleep(1)
